@@ -21,6 +21,13 @@
 		211988661830B8130091B2B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211988481830B8130091B2B4 /* UIKit.framework */; };
 		2119886E1830B8130091B2B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2119886C1830B8130091B2B4 /* InfoPlist.strings */; };
 		211988701830B8130091B2B4 /* ImakauTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2119886F1830B8130091B2B4 /* ImakauTests.m */; };
+		2119887D18311E2B0091B2B4 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2119887A18311E2B0091B2B4 /* SVProgressHUD.bundle */; };
+		2119887E18311E2B0091B2B4 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2119887C18311E2B0091B2B4 /* SVProgressHUD.m */; };
+		21198886183142DD0091B2B4 /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 21198881183142DD0091B2B4 /* FSN_categories.m */; };
+		21198887183142DD0091B2B4 /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 21198883183142DD0091B2B4 /* FSNConnection.m */; };
+		21198888183142DD0091B2B4 /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 21198885183142DD0091B2B4 /* FSNData.m */; };
+		2119888F1831DC930091B2B4 /* NekoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2119888D1831DC930091B2B4 /* NekoViewController.m */; };
+		211988901831DC930091B2B4 /* NekoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2119888E1831DC930091B2B4 /* NekoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,18 @@
 		2119886B1830B8130091B2B4 /* ImakauTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImakauTests-Info.plist"; sourceTree = "<group>"; };
 		2119886D1830B8130091B2B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2119886F1830B8130091B2B4 /* ImakauTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImakauTests.m; sourceTree = "<group>"; };
+		2119887A18311E2B0091B2B4 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		2119887B18311E2B0091B2B4 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		2119887C18311E2B0091B2B4 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		21198880183142DD0091B2B4 /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSN_categories.h; sourceTree = "<group>"; };
+		21198881183142DD0091B2B4 /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSN_categories.m; sourceTree = "<group>"; };
+		21198882183142DD0091B2B4 /* FSNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNConnection.h; sourceTree = "<group>"; };
+		21198883183142DD0091B2B4 /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNConnection.m; sourceTree = "<group>"; };
+		21198884183142DD0091B2B4 /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNData.h; sourceTree = "<group>"; };
+		21198885183142DD0091B2B4 /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNData.m; sourceTree = "<group>"; };
+		2119888C1831DC930091B2B4 /* NekoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NekoViewController.h; sourceTree = "<group>"; };
+		2119888D1831DC930091B2B4 /* NekoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NekoViewController.m; sourceTree = "<group>"; };
+		2119888E1831DC930091B2B4 /* NekoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NekoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +131,17 @@
 		2119884A1830B8130091B2B4 /* Imakau */ = {
 			isa = PBXGroup;
 			children = (
+				2119887F183142DD0091B2B4 /* FSNetworking */,
 				211988531830B8130091B2B4 /* AppDelegate.h */,
 				211988541830B8130091B2B4 /* AppDelegate.m */,
 				211988561830B8130091B2B4 /* Main.storyboard */,
 				211988591830B8130091B2B4 /* ViewController.h */,
 				2119885A1830B8130091B2B4 /* ViewController.m */,
+				2119888C1831DC930091B2B4 /* NekoViewController.h */,
+				2119888D1831DC930091B2B4 /* NekoViewController.m */,
+				2119888E1831DC930091B2B4 /* NekoViewController.xib */,
 				2119885C1830B8130091B2B4 /* Images.xcassets */,
+				2119887918311E2B0091B2B4 /* SVProgressHUD */,
 				2119884B1830B8130091B2B4 /* Supporting Files */,
 			);
 			path = Imakau;
@@ -150,6 +174,29 @@
 				2119886C1830B8130091B2B4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2119887918311E2B0091B2B4 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2119887A18311E2B0091B2B4 /* SVProgressHUD.bundle */,
+				2119887B18311E2B0091B2B4 /* SVProgressHUD.h */,
+				2119887C18311E2B0091B2B4 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		2119887F183142DD0091B2B4 /* FSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				21198880183142DD0091B2B4 /* FSN_categories.h */,
+				21198881183142DD0091B2B4 /* FSN_categories.m */,
+				21198882183142DD0091B2B4 /* FSNConnection.h */,
+				21198883183142DD0091B2B4 /* FSNConnection.m */,
+				21198884183142DD0091B2B4 /* FSNData.h */,
+				21198885183142DD0091B2B4 /* FSNData.m */,
+			);
+			path = FSNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2119885D1830B8130091B2B4 /* Images.xcassets in Resources */,
+				211988901831DC930091B2B4 /* NekoViewController.xib in Resources */,
 				2119884F1830B8130091B2B4 /* InfoPlist.strings in Resources */,
 				211988581830B8130091B2B4 /* Main.storyboard in Resources */,
+				2119887D18311E2B0091B2B4 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21198888183142DD0091B2B4 /* FSNData.m in Sources */,
+				21198886183142DD0091B2B4 /* FSN_categories.m in Sources */,
 				2119885B1830B8130091B2B4 /* ViewController.m in Sources */,
+				2119888F1831DC930091B2B4 /* NekoViewController.m in Sources */,
+				2119887E18311E2B0091B2B4 /* SVProgressHUD.m in Sources */,
 				211988551830B8130091B2B4 /* AppDelegate.m in Sources */,
 				211988511830B8130091B2B4 /* main.m in Sources */,
+				21198887183142DD0091B2B4 /* FSNConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +514,7 @@
 				211988751830B8130091B2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		211988761830B8130091B2B4 /* Build configuration list for PBXNativeTarget "ImakauTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +523,7 @@
 				211988781830B8130091B2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

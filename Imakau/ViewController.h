@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface ViewController : UIViewController <UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, NSURLSessionTaskDelegate>
+{
+    NSString *_reviewRate;
+    NSString *_productName;
+}
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
-@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UITextView *resultView;
 
 - (IBAction)searchButtonTapped:(id)sender;
 
